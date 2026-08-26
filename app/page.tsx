@@ -4,16 +4,16 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
       <main className="mx-auto w-full max-w-xl flex-1 px-6 py-24">
-        <svg aria-hidden="true" viewBox="0 0 340 230" className="mb-5 h-8 w-auto">
+        <svg aria-hidden="true" viewBox="0 0 340 220" className="mb-5 h-8 w-auto">
           <mask id="cut">
             <rect x="-300" y="-300" width="1400" height="900" fill="white" />
-            <circle cx="110" cy="115" r="106" fill="black" />
+            <circle cx="110" cy="110" r="106" fill="black" />
           </mask>
-          <circle cx="230" cy="115" r="100" fill="#171717" mask="url(#cut)" />
-          <circle cx="110" cy="115" r="100" fill="#171717" />
+          <circle cx="230" cy="110" r="100" fill="#171717" mask="url(#cut)" />
+          <circle cx="110" cy="110" r="100" fill="#171717" />
           <text
             x="110"
-            y="149"
+            y="144"
             textAnchor="middle"
             fontFamily="Geist, Helvetica, Arial, sans-serif"
             fontWeight="600"
