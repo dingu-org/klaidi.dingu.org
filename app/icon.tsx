@@ -16,14 +16,27 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          position: "relative",
           borderRadius: "50%",
-          background: "#000000",
-          color: "#f8f7f4",
+          background: "#141413",
+          color: "#ffffff",
+          fontFamily: "Helvetica, Arial, sans-serif",
           fontSize: 20,
-          fontWeight: 600,
+          fontWeight: 700,
         }}
       >
         k
+        <div
+          style={{
+            position: "absolute",
+            right: 4,
+            bottom: 5,
+            width: 5,
+            height: 5,
+            borderRadius: "50%",
+            background: "#6b7939",
+          }}
+        />
       </div>
     ),
     { ...size },

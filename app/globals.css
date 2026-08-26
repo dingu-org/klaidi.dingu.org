@@ -1,17 +1,12 @@
 @import "tailwindcss";
 
 @theme {
-  --color-cream: #f8f7f4;
-  --color-ink: #000000;
-  --color-muted: #57534e;
-  --color-faint: #78716c;
-  --color-hairline: #d6d3d1;
-  --font-mono: var(--font-plex-mono);
-}
+  --color-paper: #f8f7f4;
+  --color-wash: #f1efe9;
+  --color-signal: oklch(0.55 0.09 120);
 
-body {
-  background-color: var(--color-cream);
-  color: var(--color-ink);
+  --font-sans: var(--font-plex-mono, "IBM Plex Mono"), monospace;
+  --font-mono: var(--font-plex-mono, "IBM Plex Mono"), monospace;
 }
 
 @keyframes cursor-blink {

@@ -3,9 +3,9 @@ import { IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 
 const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
-  subsets: ["latin"],
   weight: ["400", "500"],
+  subsets: ["latin"],
+  variable: "--font-plex-mono",
 });
 
 export const metadata: Metadata = {
@@ -15,8 +15,10 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${plexMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col font-mono">{children}</body>
+    <html lang="en" className={`${plexMono.variable} bg-paper`}>
+      <body className="bg-paper font-sans text-black antialiased [font-synthesis-weight:none]">
+        {children}
+      </body>
     </html>
   );
 }
